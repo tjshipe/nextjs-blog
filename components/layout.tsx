@@ -3,10 +3,16 @@ import styles from "./layout.module.css";
 import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 
-const name = "Tyler Shipe";
-export const siteTitle = "Tyler Shipe's Blog";
+const name: string = "Tyler Shipe";
+export const siteTitle: string = "Tyler Shipe's Blog";
 
-export default function Layout({ children, home }) {
+export default function Layout({
+  children,
+  home,
+}: {
+  children: React.ReactNode;
+  home?: boolean;
+}) {
   return (
     <div className={styles.container}>
       <Head>
