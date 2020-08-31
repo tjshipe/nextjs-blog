@@ -1,14 +1,14 @@
-import Head from "next/head";
-import styles from "./layout.module.css";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import Head from 'next/head';
+import styles from './layout.module.css';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
-const name: string = "Tyler Shipe";
+const name: string = 'Tyler Shipe';
 export const siteTitle: string = "Tyler Shipe's Blog";
 
 export default function Layout({
   children,
-  home,
+  home
 }: {
   children: React.ReactNode;
   home?: boolean;
